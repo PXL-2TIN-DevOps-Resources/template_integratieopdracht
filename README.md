@@ -49,7 +49,7 @@ Voorzie een nieuwe workflow in je repository met als naam '`<groepsnaam>-OpsDev-
 _(c) Wat is Dockerhub juist? Waarvoor kunnen we dat gebruiken?_
 
 ![alt_text](https://i.imgur.com/5STVnt2.png "image_tooltip")
-_Maak een nieuwe repository aan op dockerhub met de naam opsdev-calculator. Deze maak je publiek en je plaatst de link hieronder bij in de `README.md` file:
+_Maak een nieuwe repository aan op dockerhub (één teamlid is voldoende) met de naam opsdev-calculator. Deze maak je publiek en je plaatst de link in `oplossing.md` bij onder punt (c)_
 ```
 https://hub.docker.com/r/JOUWURL
 ```
