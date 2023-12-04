@@ -83,7 +83,7 @@ _(d) Waarom maken we voor het gebruik van de credentials & webhook URL gebruik v
 Via [deze link](https://azure.microsoft.com/nl-nl/free/students/) kan je op Microsoft Azure een gratis student account aanmaken waarop je 100$ krijgt om te spenderen op het Azure cloud platform. Belangrijk is dat je je aanmeldt met je school e-mail adres.
 
 ![alt_text](https://i.imgur.com/5STVnt2.png "image_tooltip")
-_(h) Wat is Azure? Wat zijn de grootste concurrenten? Wat is het grote verschil tussen iaas, paas en saas en hoe past dit in het cloud plaatje?_
+_(e) Wat is Azure? Wat zijn de grootste concurrenten? Wat is het grote verschil tussen iaas, paas en saas en hoe past dit in het cloud plaatje?_
 
 De build & push naar dockerhub is natuurlijk geen echte deployment. Als extra challenge gaan we nu vanuit Github actions een push voorzien naar Azure app services. Dit is een dienst waar je vrij eenvoudig containers kan opstarten/hosten die publiek op het internet beschikbaar zijn.
 
@@ -97,18 +97,20 @@ Let er op dat je bij "pricing plan" kiest voor de optie "FREE F1". Hiervoor moet
 
 Vervolgens kan je in de overview pagina op de link _Get Publish profile_ klikken. De inhoud van deze file voeg je toe als secret aan je repository met als naam `AZURE_WEBAPP_PUBLISH_PROFILE` (dit is nodig om toegang te krijgen tot Azure voor de deployment). 
 
-De effectieve deploymentstappen vanuit je github actions pipeline kan je opbouwen aan de hand van de volgende documentatie:
+De effectieve deployment stappen vanuit je github actions pipeline kan je opbouwen aan de hand van de volgende documentatie:
 [https://docs.github.com/en/actions/deployment/deploying-to-your-cloud-provider/deploying-to-azure/deploying-docker-to-azure-app-service#creating-the-workflow](https://docs.github.com/en/actions/deployment/deploying-to-your-cloud-provider/deploying-to-azure/deploying-docker-to-azure-app-service#creating-the-workflow)
  
  _tip: een absolute url naar je publieke docker image is bijvoorbeeld: `docker.io/driessw/opsdev-calc`_
+
+ ![alt_text](https://i.imgur.com/5STVnt2.png "image_tooltip")
+_(f) Voorzie de publieke url van je applicatie en toon een screenshot van je aangemaakte app service in het azure dashboard_
 
 # Deliverable
 - Een CI workflow
 - Een status badge in de `README.md` file
 - Een uitgewerkte machtsberekeningsfeature a.d.h.v. de Github flow met daarbij een PR met geintegreerde CI run.
 - Een CD workflow
-- De link naar je dockerhub image bovenaan in `oplossing.md`
-- De link naar je publiek draaiende calculator op Azure in `oplossing.md`
+- Een opgevulde `oplossing.md` file voor punten a t.e.m. f.
 
 
 
