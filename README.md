@@ -46,10 +46,10 @@ Test dit uit door nieuwe feature uit te werken aan de hand van de Github flow. J
 Voorzie een nieuwe workflow in je repository met als naam '`<groepsnaam>-OpsDev-CD`. Deze workflow wordt enkel manueel gestart. Het doel van deze workflow is dat er een container gebouwd wordt en dat deze image naar dockerhub gepusht wordt (Je baas is enorme fan van Docker, hij heeft daar namelijk verschillende tshirts van).
 
 ![alt_text](https://i.imgur.com/5STVnt2.png "image_tooltip")
-_(f) Wat is Dockerhub juist? Waarvoor kunnen we dat gebruiken?_
+_(c) Wat is Dockerhub juist? Waarvoor kunnen we dat gebruiken?_
 
 ![alt_text](https://i.imgur.com/5STVnt2.png "image_tooltip")
-_(f) Maak een nieuwe repository aan op dockerhub met de naam opsdev-calculator. Deze maak je publiek en je plaatst de link hieronder bij in de `README.md` file:
+_Maak een nieuwe repository aan op dockerhub met de naam opsdev-calculator. Deze maak je publiek en je plaatst de link hieronder bij in de `README.md` file:
 ```
 https://hub.docker.com/r/JOUWURL
 ```
@@ -77,7 +77,7 @@ _Na het aanmaken van de Dockerfile kan je starten met de deployment workflow. Be
 Tenslotte willen we bij elke push naar dockerhub een bericht krijgen in onze discord server. Bouw zelf een nieuwe discord server (of gebruik een bestaande) en voorzie discord alerts. Documentatie hiervoor kan je [hier](https://github.com/marketplace/actions/actions-for-discord) terugvinden. Ook hier willen we niet dat de webhook url zichtbaar is in de yml file.
 
 ![alt_text](https://i.imgur.com/5STVnt2.png "image_tooltip")
-_(g) Waarom maken we voor het gebruik van de credentials & webhook URL gebruik van secrets? Wat is daar het voordeel van? Zijn er nog andere manieren waarop je dit kon doen?_
+_(d) Waarom maken we voor het gebruik van de credentials & webhook URL gebruik van secrets? Wat is daar het voordeel van? Zijn er nog andere manieren waarop je dit kon doen?_
 
 # Deploy naar Azure
 Via [deze link](https://azure.microsoft.com/nl-nl/free/students/) kan je op Microsoft Azure een gratis student account aanmaken waarop je 100$ krijgt om te spenderen op het Azure cloud platform. Belangrijk is dat je je aanmeldt met je school e-mail adres.
