@@ -25,7 +25,7 @@ Github actions heeft meteen een zeer goede integratie met het Github ecosysteem.
 _(b) Na het verkennen van Github Actions zal je merken dat er gebruikt gemaakt wordt van yaml files. Wat voor soort files zijn dit? hoe zijn die opgebouwd? Hoe zit een yaml syntax/structuur eruit? Documenteer in oplossing.md_
 
 # CI workflow
-Het eerste doel van onze CI "workflow", zo noemen we een pipeline in Github Actions, is dat de github repository code binnengetrokken wordt. Je zal merken dat dit op zich vrij eenvoudig gaat. Voorziek een nieuwe workflow met als naam `<groepsnaam>-OpsDev-CI` die draait op een ubuntu systeem met daarin een stap die de code van de repository binnentrekt. De nodige info hiervoor kan je terugvinden in de quickstart guide die hierboven gelinkt was.
+Het eerste doel van onze CI "workflow", zo noemen we een pipeline in Github Actions, is dat de github repository code binnengetrokken wordt. Je zal merken dat dit op zich vrij eenvoudig gaat. Voorzie een nieuwe workflow met als naam `<groepsnaam>-OpsDev-CI` die draait op een ubuntu systeem met daarin een stap die de code van de repository binnentrekt. De nodige info hiervoor kan je terugvinden in de quickstart guide die hierboven gelinkt was.
 
 De volgende stap is het voorzien van triggers voor de workflow. Wanneer wordt de workflow uitgevoerd? Bekijk [deze documentatie](https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows). En zorg ervoor dat de pipeline handmatig gestart kan worden & dat de pipeline ook automatisch runt bij een nieuwe push naar de main branch.
 
@@ -41,9 +41,6 @@ Feedback is belangrijk. Het is mogelijk om een badge toe te voegen aan de `READM
 # Integratie pull requests
 Zorg ervoor dat de CI workflow ook uitgevoerd wordt bij het maken van een pull request. 
 Test dit uit door nieuwe feature uit te werken aan de hand van de Github flow. Je werkt de feature uit om machtsberekeningen te maken. Maak na het afwerken van de feature een Pull request aan voor de merge. Controleer of de workflow ook effectief uitgevoerd wordt. 
-
-![alt_text](https://i.imgur.com/5STVnt2.png "image_tooltip") 
-_Waar kan je dit terugvinden in de pull request?_
 
 # Continious delivery
 Voorzie een nieuwe workflow in je repository met als naam '`<groepsnaam>-OpsDev-CD`. Deze workflow wordt enkel manueel gestart. Het doel van deze workflow is dat er een container gebouwd wordt en dat deze image naar dockerhub gepusht wordt (Je baas is enorme fan van Docker, hij heeft daar namelijk verschillende tshirts van).
@@ -108,6 +105,7 @@ De effectieve deploymentstappen vanuit je github actions pipeline kan je opbouwe
 # Deliverable
 - Een CI workflow
 - Een status badge in de `README.md` file
+- Een uitgewerkte machtsberekeningsfeature a.d.h.v. de Github flow met daarbij een PR met geintegreerde CI run.
 - Een CD workflow
 - De link naar je dockerhub image bovenaan in `oplossing.md`
 - De link naar je publiek draaiende calculator op Azure in `oplossing.md`
