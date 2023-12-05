@@ -15,7 +15,7 @@ _Maak een account aan op [dockerhub](https://hub.docker.com/)._
 # Let's get started!
 OpsDev hecht veel waarde aan kwaliteit & feedback. Een CI/CD pipeline is dan ook een must-have voor het bedrijf. Helaas heeft in-house niemand buiten jijzelf de kennis om CI/CD pipelines te bouwen.
 
-Voor de continious integration fase van het bouwen van de applicatie zal je gebruik maken van Github actions.  Je zal merken dat hier verschillen in zitten ten opzichte van jenkins. 
+Voor de continious integration fase van het bouwen en testen van de applicatie zal je gebruik maken van Github actions.  Je zal merken dat hier verschillen in zitten ten opzichte van jenkins. 
 
 Github actions heeft meteen een zeer goede integratie met het Github ecosysteem. Dit is iets waar je perfect gebruik van kan maken. Je zal de guidelines van de documentatie strict  moeten volgen om een werkend product te krijgen.
 
@@ -68,11 +68,9 @@ Voor de opzet van je CD pipeline helpen we je graag verder:
 _Voorzie een `Dockerfile` in de root van deze repository die de nodeJS opstart (denk ook aan de `npm install` in de container)_
 
 ![alt_text](https://i.imgur.com/5STVnt2.png "image_tooltip")
-_Na het aanmaken van de Dockerfile kan je starten met de deployment workflow. Bekijk hiervoor de documentatie van de linken hierboven.
+_Na het aanmaken van de Dockerfile kan je starten met de deployment workflow. Bekijk hiervoor de documentatie van de linken hierboven._
 
 **!Let op: de credentials mogen niet zichtbaar zijn in yml file!**
-
-
 
 Tenslotte willen we bij elke push naar dockerhub een bericht krijgen in onze discord server. Bouw zelf een nieuwe discord server (of gebruik een bestaande) en voorzie discord alerts. Documentatie hiervoor kan je [hier](https://github.com/marketplace/actions/actions-for-discord) terugvinden. Ook hier willen we niet dat de webhook url zichtbaar is in de yml file.
 
@@ -108,8 +106,8 @@ _(f) Voorzie de publieke url van je applicatie en toon een screenshot van je aan
 # Deliverable
 - Een CI workflow
 - Een status badge in de `README.md` file
-- Een uitgewerkte machtsberekeningsfeature a.d.h.v. de Github flow met daarbij een PR met geintegreerde CI run.
-- Een CD workflow
+- Een uitgewerkte machtsberekeningsfeature a.d.h.v. de Github flow met daarbij een PR met geintegreerde CI run. (Credentials / tokens in de pipelin e= -30% op het eindcijfer)
+- Een CD workflow (Credentials / tokens in de pipelin e= -30% op het eindcijfer)
 - Een opgevulde `oplossing.md` file voor punten a t.e.m. f.
 
 
